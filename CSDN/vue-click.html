@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+</head>
+<body>
+	<div id="main">
+		<p>
+			<input type="button" value="按钮" v-on:click="a=!a">
+		</p>
+		<div style="width: 100px;height:100px; border:1px solid red;"v-show="a">饿狼传说,呀呀呀呀呀</div>
+	</div>
+	<script type="text/javascript">
+		var main = new Vue({
+			el:'#main',
+			data:{
+				a: true
+			}
+		})
+	</script>
+</body>
+</html>

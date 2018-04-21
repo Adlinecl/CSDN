@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>阅读全文</title>
+	<link rel="stylesheet" href="./Swiper-3.4.2/dist/css/swiper.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/readAll.css" type="text/css">
+</head>
+<body>
+	<div id="readAll">
+		<div class="All">
+			<div class="topBar">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr >
+						<td class="col-sm-2" style="text-align:left;">
+							<a href="javascript:void(0);">返回</a>
+						</td>
+						<td class="col-sm-6" style="text-align:center;">
+							<a href="javascript:void(0);">CSDN博客</a>
+						</td>
+						<td class="col-sm-4 search" style="text-align:right;">
+							<a href="./person.html"> 个人中心</a>
+							<a href="javascript:void(0);" style="margin-right:0.5rem;">搜索</a>
+							<a href="javascript:void(0);">登陆</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="details">
+			<div class="user clearfix">
+				<div class="userName">
+					<a href="javascript:void(0);">
+						<img src="./image/user.jpg" alt="">
+						<span>{{ list.title }}</span>
+					</a>
+				</div>
+				<div class="userLike">
+					<a href="javascript:void(0);">关注</a>
+				</div>
+			</div>
+			<div class="article">
+				<h1>秘密：从程序员到领导者的微妙之处</h1>
+				<div class="info">
+					<span class="type">转载</span>
+					<span class="time">{{ list.date }}</span>
+					<span class="null">{{ list.read_num }}</span>
+				</div>
+				<div class="articleContent" style="height: 665px; overflow: hidden;">
+					<div class="content">
+						<p>
+							<img src="./image/p" alt="">
+						</p>
+						<p>
+							读到一篇关于程序员、领导力和领导者的好文章，翻译过来分享下。借用一句文中的话：“好吧，我只是个程序员，为什么需要领导？” ，读完你就知道了。<br>
+						</p>
+						<hr>
+						<p>
+							做一个优秀的领导者可能不是大部分程序员会立即认同的东西。许多人的脑海里立即浮现出这样一种形象：宏大的讲台与高昂的演讲。
+						</p>
+						<p>
+							然而，让我们看看塞斯·高汀（Seth Godin）对领导力的定义：
+						</p>
+					</div>
+				</div>
+				<div class="readBox">
+					<div class="readMore"></div>
+					<div class="btn">
+						<a href="javascript:void(0);">阅读全文</a>
+					</div>
+				</div>
+				<div class="have">
+					<a href="javascript:void(0);" @click="clickLog" ref="collecter">收藏</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/readAll.js"></script>
+	<!-- // <script type="text/javascript" src="./js/readCollect.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,140 @@
+html,body{
+	font-size: 62.5%;
+}
+html,body,p,h2,ul,li,h3{
+	margin: 0;
+	padding: 0;
+}
+.body{
+	/*background-color: #ccc;*/
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.topBar a, .notFix a{
+	color: #4f4f4f;
+}
+.clearfix::after{
+	clear:both;
+	height: 0;
+	display: block;
+	content: "";
+}
+.topBar{
+	background-color: white;
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	border: 1px solid red; 
+	padding: 0 0.5rem;
+	overflow: hidden;
+}
+.pic{
+	padding-top: 4.1rem;
+}
+.line{
+	width: 100%;
+	height:1rem;
+	background-color: #ccc;
+}
+.one{
+	padding: 1.6rem;
+}
+.touxiang, .details, .cb, .chongzhi{
+	float: left;
+}
+.touxiang a{
+	display: block;
+}
+.touxiang a img{
+	width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 50%;
+    padding: .05rem;
+    border: .05rem solid #eee;
+}
+.details{
+	padding-left: 1rem;
+}
+.details h3{
+	font-size: 1.45rem;
+    color: #4f4f4f;
+    padding-bottom: 1.0rem;
+    font-weight: 700;
+}
+.details span, .cb span, .chongzhi span{
+	display: inline-block;
+    vertical-align: middle;
+    font-size: .4rem;
+    color: #9e9e9e;
+
+}
+.details em{
+	color: #6ab3df;
+    margin-left: .2rem;
+    padding-right: 2rem;
+}
+.cb em{
+	color: red;
+    margin-left: .2rem;
+    padding-right: 2rem;
+}
+.down{
+	background: #fafafa;
+    padding: 1.5rem 1.6rem;
+    border-bottom: solid .025rem #ddd;
+}
+.chongzhi{
+	float: right;
+}
+.chongzhi a{
+	height: .6rem;
+    line-height: .6rem;
+    padding: 0 .2rem;
+    font-size: .35rem;
+    color: #fff;
+    background-color: #f44444;
+    border-radius: .1rem;
+    margin-left: .15rem;
+}
+.downTwo{
+	padding-top: 1.5rem;
+
+}
+.downTwo em{
+	font-size: .35rem;
+    color: #707070;
+    margin-right: .1rem;
+}
+.downTwo img{
+	width: 4.8rem;
+    height: 1.6rem;
+    /*line-height: 1.6rem;*/
+    padding-right: 1rem;
+    vertical-align: middle;
+}
+.boke{
+	/*background-color: #fff;*/
+    margin: 1.4rem 0rem;
+}
+.boke ul li{
+	border-bottom: solid .025rem #ddd;
+    box-shadow: 0 0 0 0 #ddd, inset 0 0 0 0 #ddd;
+    padding: 1.3rem 1.6rem;
+}
+.boke ul li span{
+	font-size: .4rem;
+    color: #4f4f4f;
+}
+.boke ul li a em{
+	width: 20%;
+    float: right;
+    font-size: 1.5rem;
+    color: #c7c7cc;
+    text-align: right;
+}
